@@ -1,0 +1,39 @@
+import random
+
+random_number = random.randint(1, 6)
+
+print(str(random_number))
+
+if random_number >= 4:
+    print("Tails")
+else:
+    print("Heads")
+
+country1 = "Netherlands"
+country2 = "England"
+country3 = "India"
+
+countries_i_visited = [country1, country2, country3]
+
+print(countries_i_visited[0])
+
+countries_i_visited[2] = "IndiaA"
+
+print(countries_i_visited)
+
+countries_i_visited.append("Spain")
+
+print(countries_i_visited)
+
+countries_i_visited.extend(["France", "Turkiye"])
+
+print(countries_i_visited)
+
+friends = ["I", "don't", "have", "any", "friends", ",", "jk", "haha"]
+
+print("The friend: " + friends[random.randint(0, (len(friends) - 1))])
+
+list_of_lists = [countries_i_visited, friends]
+
+res = list_of_lists[1][2]
+print(res)
