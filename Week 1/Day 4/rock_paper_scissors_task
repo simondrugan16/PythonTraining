@@ -1,0 +1,32 @@
+import random
+
+choices = ["rock", "paper", "scissors"]
+
+choice = choices[int(input("What pick? 0 = rock, 1 = paper, 2 = scissors. "))]
+
+random_choice = choices[random.randint(0, 2)]
+
+print("You chose: " + choice)
+print("Computer chose: " + random_choice)
+
+if choice == "rock":
+    if random_choice == "rock":
+        print("Draw...")
+    elif random_choice == "paper":
+        print("You lose :(")
+    else:
+        print("You win!")
+elif choice == "paper":
+    if random_choice == "rock":
+        print("You win!")
+    elif random_choice == "paper":
+        print("Draw...")
+    else:
+        print("You lose :(")
+elif choice == "scissors":
+    if random_choice == "rock":
+        print("You lose :(")
+    elif random_choice == "paper":
+        print("You win!")
+    else:
+        print("Draw...")
