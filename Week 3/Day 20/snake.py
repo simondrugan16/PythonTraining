@@ -37,10 +37,11 @@ class Snake():
         positions = [(0, 0), (-20, 0), (-40, 0)]
         for pos in positions:
             segment = Turtle("square")
-            segment.color("white")
+            segment.color("black")
             segment.penup()
             segment.goto(pos)
             segments.append(segment)
+            segment.color("white")
         self.segments = segments
         return segments
     
@@ -48,7 +49,8 @@ class Snake():
         snake_head_location = self.head.pos()
         food_location = food.food.pos()
 
-        if (snake_head_location[0] - 10) < food_location[0] < (snake_head_location[0] + 10) and (snake_head_location[1] - 10) < food_location[1] < (snake_head_location[1] + 10):
+        if ((snake_head_location[0] - 20) < food_location[0] < (snake_head_location[0] + 20) and
+            (snake_head_location[1] - 20) < food_location[1] < (snake_head_location[1] + 20)):
             scoreboard.gain_point()
             scoreboard.print_score()
             food.new_food_position(self.head)

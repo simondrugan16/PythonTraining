@@ -11,8 +11,8 @@ class Food():
     def new_food_position(self, snake_head: Turtle):
         snake_head_location = snake_head.pos()
         while True:
-            random_x = random.randint(-300, 300)
-            random_y = random.randint(-300, 300)
+            random_x = random.randint(-290, 290)
+            random_y = random.randint(-290, 290)
             if not ((snake_head_location[0] - 10) < random_x < (snake_head_location[0] + 10) and
                     (snake_head_location[1] - 10) < random_y < (snake_head_location[1] + 10)):
                 self.food.teleport(x=random_x, y=random_y)
