@@ -1,8 +1,5 @@
 from turtle import Turtle, Screen
-import oop
 from prettytable import PrettyTable
-
-print(oop.my_variable)
 
 timmy = Turtle()
 print(timmy)

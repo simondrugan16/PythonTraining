@@ -1,0 +1,1 @@
+# skipping the turtle spirograph and rgb extractiona s seems kinda useless
