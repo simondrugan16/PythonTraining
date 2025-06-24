@@ -24,7 +24,7 @@ screen.onkey(snake.right, "d")
 
 while _continue:
     screen.update()
-    time.sleep(0.04)
+    time.sleep(0.1)
     snake.move()
     snake.check_eat(food, scoreboard)
     if (snake.check_collision(scoreboard, screen)):
