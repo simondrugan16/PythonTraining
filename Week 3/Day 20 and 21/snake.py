@@ -56,7 +56,7 @@ class Snake():
             food.new_food_position(self.head)
             self.make_segment()
 
-    def check_collision(self, scoreboard: Scoreboard, screen: Screen,):
+    def check_collision(self, scoreboard: Scoreboard, screen):
         snake_head_location = self.head.pos()
         if (snake_head_location[0] >= 300 or snake_head_location[0] <= -300 or
             snake_head_location[1] >= 300 or snake_head_location[1] <= -300):

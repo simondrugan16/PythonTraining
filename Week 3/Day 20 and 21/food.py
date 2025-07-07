@@ -15,15 +15,7 @@ class Food():
             random_y = random.randint(-290, 290)
             if not ((snake_head_location[0] - 10) < random_x < (snake_head_location[0] + 10) and
                     (snake_head_location[1] - 10) < random_y < (snake_head_location[1] + 10)):
-                self.food.teleport(x=random_x, y=random_y)
+                self.food.goto(x=random_x, y=random_y)
                 break
             print("@@@@@@@@@@")
     
-    def make_segment(self, snake_head):
-        segments = []
-        food = Turtle("square")
-        food.color("white")
-        food.penup()
-        food.goto(self.new_food_position(snake_head))
-        segments.append(food)
-        return segments
