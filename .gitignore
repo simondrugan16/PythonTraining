@@ -65,7 +65,8 @@ dmypy.json
 .pylint.d/
 
 # Virtual environments
-.venv/  <-- DO NOT ignore for this training
+.venv/
+.venv
 
 # MacOS and system files
 .DS_Store
